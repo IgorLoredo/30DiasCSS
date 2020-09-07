@@ -1,0 +1,34 @@
+:root{
+    background-color:rgba(123, 134, 155, 0.103);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+ul {
+    position: relative;
+    display: flex;
+   
+}
+
+ul li {
+    position: relative;
+    list-style-type: none;
+    width: 200px;
+    height: 100px;
+}
+
+.icon {
+    height:50px;
+    transition: 1s;
+}
+
+.icon :hover{
+    cursor: pointer;    /*quando o mouse passar*/
+    transform: translateY(10px);   /*translade no eixo Y*/
+    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);/*Efeito de sombra*/
+}
+
+#icon-img{
+    height: 100px;
+}
