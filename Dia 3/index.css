@@ -5,5 +5,15 @@ body{
 section{
     width: 100%;
     height: 100%;
+    background: #8b9965;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.Text{
+    position: absolute;
+    top: 50%;
+    white-space: nowrap;
     
 }
