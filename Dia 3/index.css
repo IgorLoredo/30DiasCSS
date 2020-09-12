@@ -10,10 +10,32 @@ section{
     position: absolute;
 }
 
+.pt1{
+    height: 100%;
+    width: 50%;
+    background: rgb(128, 57, 57);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #262626;
+}
 
 .Text{
     position: absolute;
     top: 50%;
     white-space: nowrap;
-    
+    font-size: 12em;
+    line-height: 220px;
+    font-family:"arial black";
+    animation:  animate 10s linear infinite;
+}
+
+@keyframes animate{
+   0%{
+        transform: translate(0,-50%);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%);
+    }
 }
