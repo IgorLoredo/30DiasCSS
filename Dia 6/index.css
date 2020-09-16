@@ -3,3 +3,14 @@ body{
 }
 
 
+ul {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex
+}
+
+ul li{
+    padding: 15px;
+    list-style: none;
+}
