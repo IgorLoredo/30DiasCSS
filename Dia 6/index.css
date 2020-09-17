@@ -6,11 +6,38 @@ body{
 ul {
     font-size: 100px;
     margin: 0;
-    padding: 0;
-    display: flex
+    padding: 150px;
+    display: flex;    
 }
 
 ul li{
     padding: 15px;
     list-style: none;
+   color: #484848;
+    animation: lighting 2.4s linear infinite;
+}
+
+
+@keyframes lighting{
+
+   0% {
+		color: #484848;
+		text-shadow: none;
+	}
+
+	90% {
+		color: #484848;
+		text-shadow: none;
+	}
+
+	100% {
+		color: #fff900;
+		text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+	}
+
+
+}
+
+ul li:nth-child(odd){
+   
 }
