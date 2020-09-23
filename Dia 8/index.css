@@ -38,6 +38,18 @@ body{
     border-radius: 50%;
 }
 
-@keyframes: batidao{
-    
+@keyframes batidao{
+   0% {
+       transform:  rotate(45deg) scale(1);
+    }
+    10%{
+       transform:  rotate(45deg) scale(1.4);
+    }
+    30%{
+       transform:  rotate(45deg) scale(2);
+       
+    }
+    60%{
+       transform:  rotate(45deg) scale(1.5);
+    }
 }
