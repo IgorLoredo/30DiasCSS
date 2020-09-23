@@ -23,3 +23,8 @@ body{
 	position: relative;
 	transform-origin: top;
 }
+
+
+.new span::before{
+
+}
