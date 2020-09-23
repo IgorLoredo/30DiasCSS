@@ -37,11 +37,28 @@ body{
 	transform: translateX(-50%);
 }
 
-.new span :first-child{
-	animation: ida 2s ease-in infinite;
+.new span:first-child 
+{
+	animation: left-arm 2s ease-in infinite;
 }
 
+.new span:last-child 
+{
+	animation: right-arm 2s ease-in infinite 1s;
+}
 
-.new span :last-child{
-	animation: ida 2s ease-in infinite;
+@keyframes left-arm 
+{
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(60deg); }
+	50% { transform: rotate(0deg); }
+	100% { transform: rotate(0deg); }
+}
+
+@keyframes right-arm 
+{
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(-60deg); }
+	50% { transform: rotate(0deg); }
+	100% { transform: rotate(0deg); }
 }
