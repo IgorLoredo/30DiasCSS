@@ -26,5 +26,22 @@ body{
 
 
 .new span::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: white;
+	transform: translateX(-50%);
+}
 
+.new span :first-child{
+	animation: ida 2s ease-in infinite;
+}
+
+
+.new span :last-child{
+	animation: ida 2s ease-in infinite;
 }
