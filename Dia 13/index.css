@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+div ul {
+    list-style: none;
+    font-size: 80px;
+    letter-spacing: 20px;
+    animation: carregamento 4s linear infinite;
+}
+
+@keyframes carregamento{
+    0%{
+        color:red;
+        transform: translateX(-20px);
+        opacity: 0;
+        letter-spacing: 20px;
+    }
+      10% 
+    {
+        opacity: 1;
+    }
+    50% 
+    { 
+        letter-spacing: -20px;
+        opacity: 1;
+    }
+    100% 
+    {
+        color: blue;
+        transform: translateX(50px);
+        letter-spacing: 20px;
+        opacity: 0;
+    }
+}
+
+
+div ul:nth-child(1)
+{
+    animation-delay: 0s;
+}
+
+div ul:nth-child(2)
+{
+    animation-delay: 1s;
+}
+
+div ul:nth-child(3)
+{
+    animation-delay: 2s;
+}
+
+div ul:nth-child(4)
+{
+    animation-delay: 4s;
+}
