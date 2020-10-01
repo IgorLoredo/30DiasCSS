@@ -4,8 +4,32 @@ body{
     justify-content: center;
     display: flex;
     height: 100vh;
+    background-color: rgb(207, 47, 47);
 }
 
 h1{
-    
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    line-height: 90px;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
+                 0 2px 0 #efefef,
+                 0 3px 0 #efefef,
+                 0 4px 0 #efefef,
+                 0 30px 5px rgba(0,0,0,.1);
+    animation: float 3s linear infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes float {
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
 }
